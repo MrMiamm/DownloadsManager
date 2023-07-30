@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.resources.ui.MainWindowController">
+   <children>
+      <AnchorPane prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #16a5dd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Downlads Manager" textFill="WHITE" AnchorPane.bottomAnchor="8.399999999999999" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Haettenschweiler" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="84.0" prefHeight="316.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <Button fx:id="b_clean" layoutX="313.0" layoutY="234.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="160.0" text="Clean Downloads Folder" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="234.0" />
+            <TableView fx:id="l_rules" maxWidth="1.7976931348623157E308" prefHeight="316.0" prefWidth="414.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="0.0" />
+            <VBox alignment="TOP_CENTER" layoutX="443.0" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="146.0" prefWidth="127.0" spacing="10.0" AnchorPane.rightAnchor="29.799999999999955">
+               <children>
+                  <Button fx:id="b_add" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Add Rule" />
+                  <Button fx:id="b_modify" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Modify" />
+                  <Button fx:id="b_delete" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete" />
+                  <Button fx:id="b_delete_all" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete All" />
+                  <CheckBox fx:id="checkb_delete_folders" mnemonicParsing="false" text="Delete All Folders" />
+                  <CheckBox fx:id="checkb_delete_everything" mnemonicParsing="false" text="Delete Everything" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
